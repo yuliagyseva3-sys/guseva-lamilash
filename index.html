@@ -52,6 +52,28 @@
   .footer-messengers{margin-top:16px}
 }
 
+@media(max-width:560px){
+  .hero-visual{
+    position:relative!important;
+    overflow:hidden!important;
+  }
+  .hero-photo{
+    display:block!important;
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:center center!important;
+    opacity:1!important;
+    visibility:visible!important;
+    z-index:1!important;
+  }
+  .hero-visual .chip{
+    position:relative!important;
+    z-index:2!important;
+  }
+}
 </style>
 </head>
 <body>
