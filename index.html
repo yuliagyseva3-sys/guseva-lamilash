@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#08080a">
-<meta name="description" content="Юлия Гусева — мастер и преподаватель по ламинированию и наращиванию ресниц. Процедуры и обучение в Минеральных Водах / КМВ.">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#08080a" name="theme-color"/>
+<meta content="Юлия Гусева — мастер и преподаватель по ламинированию и наращиванию ресниц: 9 лет в beauty, 5 лет преподавания. Процедуры и обучение с нуля в Минеральных Водах / КМВ." name="description"/>
 <title>Guseva LamiLash — ресницы и обучение</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600&display=swap');
@@ -24,6 +25,44 @@
 .reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.show{opacity:1;transform:none}
 @media(max-width:900px){.nav,.header>.btn{display:none}.menu{display:block}.nav.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:#0a0a0d;padding:22px;border-bottom:1px solid var(--line)}.hero{grid-template-columns:1fr;min-height:auto;padding-top:48px}.hero-visual{min-height:580px}.section-head,.service-grid,.course-grid,.students,.about{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr 1fr}.portfolio img:first-child{grid-row:span 1}.steps{grid-template-columns:1fr 1fr}.about img{height:520px}}
 @media(max-width:560px){.shell{width:calc(100% - 30px)}.header{padding:12px 15px}.hero{gap:28px;padding-bottom:64px}.hero h1{font-size:50px;line-height:.92;letter-spacing:-.4px}.lead{font-size:15px}.actions{display:grid}.actions .btn{width:100%}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.fact b{font-size:28px}.fact span{font-size:9px}.hero-visual{min-height:470px}.hero-photo{border-radius:28px}.chip{font-size:8px}.section{padding:72px 0}.section-title{font-size:40px;overflow-wrap:anywhere}.service img{height:290px}.portfolio{grid-template-columns:1fr;grid-auto-rows:285px}.course{padding:28px 22px}.course h3{font-size:38px}.student-card img{height:380px}.about img{height:440px}.about h2{font-size:56px}.quote{font-size:18px}.steps{grid-template-columns:1fr}.final{padding:36px 21px}.final h2{font-size:46px;line-height:.92;overflow-wrap:anywhere}.footer{display:block}.footer span{display:block;margin-top:7px}}
+
+/* 26.08.2026 — финальные правки */
+.service img{object-fit:contain!important;object-position:center!important;background:#0b0b0e}
+.portfolio{grid-template-columns:repeat(3,1fr)!important;grid-auto-rows:320px!important}
+.portfolio img,.portfolio img:first-child{grid-row:auto!important;object-fit:contain!important;object-position:center!important;background:#0b0b0e}
+.student-card img{object-fit:contain!important;object-position:center!important;background:#0b0b0e}
+@media(max-width:900px){.portfolio{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:560px){.portfolio{grid-template-columns:1fr!important;grid-auto-rows:360px!important}}
+
+/* 26.08.2026 — финальная корректировка изображений */
+.service img{height:auto!important;aspect-ratio:4/3;object-fit:cover!important;object-position:center!important;background:none!important}
+.student-card img{height:auto!important;aspect-ratio:4/3;object-fit:cover!important;object-position:center!important;background:none!important}
+
+/* Прямые мессенджеры */
+.messenger-note{margin-top:24px!important;color:#ddd8de!important;font-size:13px!important}
+.messenger-help{margin-top:7px!important;color:var(--muted)!important;font-size:12px!important}
+.messenger-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.messenger-links .btn{min-height:44px;padding:0 18px}
+.footer-messengers{display:flex;gap:14px;flex-wrap:wrap}
+.footer-messengers a{color:#d7d2d8}
+.footer-messengers a:hover{color:var(--pink2)}
+@media(max-width:560px){
+  .messenger-links{display:grid;grid-template-columns:1fr}
+  .messenger-links .btn{width:100%}
+  .footer-messengers{margin-top:16px}
+}
+
+
+/* 31.08.2026 — iOS Safari: изображения вынесены из data: URI в отдельные файлы */
+img{
+  max-width:100%;
+  -webkit-user-select:none;
+}
+.hero-photo,.service img,.portfolio img,.student-card img,.about img{
+  -webkit-transform:translateZ(0);
+  transform:translateZ(0);
+}
+
 </style>
 </head>
 <body>
@@ -31,42 +70,57 @@
 <a class="logo" href="#top"><span class="logo-mark">GL</span><span><strong>GUSEVA</strong><small>LAMILASH</small></span></a>
 <nav class="nav"><a href="#services">Услуги</a><a href="#portfolio">Портфолио</a><a href="#training">Обучение</a><a href="#about">Обо мне</a><a href="#contact">Запись</a></nav>
 <a class="btn btn-pink" href="#contact">Записаться</a>
-<button class="menu" aria-label="Открыть меню">MENU</button>
+<button aria-label="Открыть меню" class="menu">MENU</button>
 </header>
 <main id="top">
 <section class="hero shell">
-<div class="reveal"><div class="eyebrow">LASH ARTIST • EDUCATOR • КМВ</div><h1>КРАСИВЫЙ <span>ВЗГЛЯД.</span><br>СИЛЬНАЯ <span>БАЗА.</span></h1><p class="lead">Ламинирование и наращивание ресниц для клиентов. Обучение с нуля и повышение квалификации — с диагностикой, понятной системой и принципом «не навреди».</p><div class="actions"><a class="btn btn-pink" href="#services">Записаться на процедуру</a><a class="btn btn-outline" href="#training">Хочу на обучение</a></div><div class="facts"><div class="fact"><b>8+</b><span>лет в beauty</span></div><div class="fact"><b>4</b><span>года преподавания</span></div><div class="fact"><b>16×</b><span>призёр чемпионатов</span></div></div></div>
-<div class="hero-visual reveal"><img class="hero-photo" src="images/image-01.webp" alt="Юлия Гусева"><span class="chip a">МАСТЕР • ПРЕПОДАВАТЕЛЬ</span><span class="chip b">GUSEVA LAMILASH</span></div>
+<div class="reveal"><div class="eyebrow">LASH ARTIST • EDUCATOR • КМВ</div><h1>КРАСИВЫЙ <span>ВЗГЛЯД.</span><br/>СИЛЬНАЯ <span>БАЗА.</span></h1><p class="lead">Ламинирование и наращивание ресниц для клиентов. Обучение с нуля и повышение квалификации — с диагностикой, понятной системой и принципом «не навреди».</p><div class="actions"><a class="btn btn-pink" href="#services">Записаться на процедуру</a><a class="btn btn-outline" href="#training">Хочу на обучение</a></div><div class="facts"><div class="fact"><b>9</b><span>лет в beauty</span></div><div class="fact"><b>5</b><span>лет преподавания</span></div><div class="fact"><b>16×</b><span>призёр чемпионатов</span></div></div></div>
+<div class="hero-visual reveal"><img alt="Юлия Гусева" class="hero-photo" src="images/image-01.jpg"/><span class="chip a">МАСТЕР • ПРЕПОДАВАТЕЛЬ</span><span class="chip b">GUSEVA LAMILASH</span></div>
 </section>
 <section class="section shell" id="services">
 <div class="section-head reveal"><div><div class="eyebrow">01 / УСЛУГИ</div><h2 class="section-title">НЕ «ОДИНАКОВО ВСЕМ».</h2></div><p>Сначала оцениваю исходник, форму глаз и задачу клиента. Только потом выбираю технику, изгиб и эффект.</p></div>
 <div class="service-grid">
-<article class="service reveal"><img src="images/image-02.webp" alt="Ламинирование ресниц"><div class="service-body"><div class="eyebrow">01</div><h3>Ламинирование ресниц</h3><p>Поднимаем ресницы от корня, раскрываем природную длину и подбираем изгиб под конкретный исходник — без одинаковых решений для всех.</p><a class="btn btn-pink" href="#contact">Записаться</a></div></article>
-<article class="service reveal"><img src="images/image-03.webp" alt="Наращивание ресниц"><div class="service-body"><div class="eyebrow">02</div><h3>Наращивание ресниц</h3><p>Классика, объёмы и современные эффекты с индивидуальным подбором длины, изгиба и плотности.</p><a class="btn btn-pink" href="#contact">Записаться</a></div></article>
+<article class="service reveal"><img alt="Ламинирование ресниц" decoding="async" loading="lazy" src="images/image-02.jpg"/><div class="service-body"><div class="eyebrow">01</div><h3>Ламинирование ресниц</h3><p>Поднимаем ресницы от корня, раскрываем природную длину и подбираем изгиб под конкретный исходник — без одинаковых решений для всех.</p><a class="btn btn-pink" href="#contact">Записаться</a></div></article>
+<article class="service reveal"><img alt="Наращивание ресниц" decoding="async" loading="lazy" src="images/image-03.jpg"/><div class="service-body"><div class="eyebrow">02</div><h3>Наращивание ресниц</h3><p>Классика, объёмы и современные эффекты с индивидуальным подбором длины, изгиба и плотности.</p><a class="btn btn-pink" href="#contact">Записаться</a></div></article>
 </div><div class="subnote reveal"><b>Не знаете, что выбрать?</b> Напишите мне — сначала разберём исходник и определим безопасный и подходящий вариант.</div>
 </section>
 <section class="section shell" id="portfolio">
 <div class="section-head reveal"><div><div class="eyebrow">02 / ПОРТФОЛИО</div><h2 class="section-title">РЕЗУЛЬТАТ ГОВОРИТ САМ.</h2></div><p>Натуральные коммерческие результаты — в основе портфолио. Креативные работы показывают технический диапазон мастера.</p></div>
-<div class="portfolio reveal"><img src="images/image-04.webp" alt=""><img src="images/image-05.webp" alt=""><img src="images/image-06.webp" alt=""><img src="images/image-07.webp" alt=""><img src="images/image-08.webp" alt=""><img src="images/image-09.webp" alt=""></div><div class="portfolio-label">ЛАМИНИРОВАНИЕ • НАРАЩИВАНИЕ • ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
+<div class="portfolio reveal"><img alt="Работа Юлии Гусевой по наращиванию ресниц — пример 1" decoding="async" loading="lazy" src="images/image-04.jpg"/><img alt="Работа Юлии Гусевой по наращиванию ресниц — пример 2" decoding="async" loading="lazy" src="images/image-05.jpg"/><img alt="Работа Юлии Гусевой по наращиванию ресниц — пример 3" decoding="async" loading="lazy" src="images/image-06.jpg"/><img alt="Работа Юлии Гусевой по наращиванию ресниц — пример 4" decoding="async" loading="lazy" src="images/image-07.jpg"/><img alt="Работа Юлии Гусевой по наращиванию ресниц — пример 5" decoding="async" loading="lazy" src="images/image-08.jpg"/><img alt="Работа Юлии Гусевой по наращиванию ресниц — пример 6" decoding="async" loading="lazy" src="images/image-09.jpg"/></div><div class="portfolio-label">ЛАМИНИРОВАНИЕ • НАРАЩИВАНИЕ • ИНДИВИДУАЛЬНЫЙ ПОДБОР</div>
 </section>
 <section class="training-wrap" id="training"><div class="section shell">
 <div class="section-head reveal"><div><div class="eyebrow">03 / ОБУЧЕНИЕ</div><h2 class="section-title">СИЛЬНЫЙ МАСТЕР НАЧИНАЕТСЯ С СИЛЬНОЙ БАЗЫ.</h2></div><p>Я не учу просто повторять движения. Разбираем связь между исходником, действием и результатом — чтобы после курса вы могли принимать решения самостоятельно.</p></div>
 <div class="course-grid">
-<article class="course reveal"><div class="eyebrow">КОД ПАМЯТИ</div><h3>Ламинирование ресниц</h3><p>Базовый курс с нуля: теория заранее, один практический день и самостоятельные отработки.</p><ul><li>теория в онлайн-уроках до старта</li><li>диагностика исходника и выбор валика</li><li>3 самостоятельные отработки</li><li>разбор ошибок и постановка руки</li><li>несколько тарифов на выбор</li><li>поддержка после обучения</li></ul><a class="btn btn-pink" href="#contact">Узнать о курсе</a></article>
-<article class="course reveal"><div class="eyebrow">БАЗОВЫЙ КУРС</div><h3>Наращивание ресниц с нуля</h3><p>Сильная база для старта профессии: техника, материалы, моделирование и практика.</p><ul><li>теория в онлайн-записи</li><li>практика на модели</li><li>отработки от базы к объёмам</li><li>блок по продвижению в расширенных тарифах</li><li>3 сертификата и методическое пособие 45+ страниц</li><li>несколько тарифов на выбор</li></ul><a class="btn btn-outline" href="#contact">Получить программу</a></article>
+<article class="course reveal"><div class="eyebrow">КОД ПАМЯТИ</div><h3>Ламинирование ресниц</h3><p>Базовый курс с нуля: блок предобучения ещё до старта курса (теория заранее), один практический день и самостоятельные отработки.</p><ul><li>теория в онлайн-уроках до старта</li><li>1 практический день</li><li>3 самостоятельные отработки</li><li>разбор ошибок и постановка руки</li><li>несколько тарифов на выбор</li><li>поддержка после обучения</li><li>3 сертификата и методическое пособие</li><li>дополнительный блок по продвижению и поиску клиентов</li></ul><a class="btn btn-pink" href="#contact">Узнать о курсе</a></article>
+<article class="course reveal"><div class="eyebrow">БАЗОВЫЙ КУРС</div><h3>Наращивание ресниц с нуля</h3><p>Сильная база для старта профессии: блок предобучения, техника, материалы, моделирование и практика.</p><ul><li>теория в онлайн-записи</li><li>практика на моделях</li><li>отработки от классики к объёмам</li><li>блок по продвижению в расширенных тарифах</li><li>3 сертификата и методическое пособие</li><li>несколько тарифов на выбор</li></ul><a class="btn btn-outline" href="#contact">Получить программу</a></article>
 </div></div></section>
 <section class="section shell">
 <div class="section-head reveal"><div><div class="eyebrow">04 / УЧЕНИЦЫ</div><h2 class="section-title">НЕ СЕРТИФИКАТ. САМОСТОЯТЕЛЬНОСТЬ.</h2></div><p>Для меня результат преподавателя — это не только моя работа, а способность ученицы самостоятельно принимать решения после курса.</p></div>
-<div class="students"><article class="student-card reveal"><img src="images/image-10.webp" alt="Юлия Гусева с ученицей"><div class="copy"><h3>Практика и обратная связь</h3><p>Постановка руки, корректировки по ходу работы и самостоятельная отработка под контролем преподавателя.</p></div></article><article class="student-card reveal"><img src="images/image-11.webp" alt="Юлия Гусева с ученицами"><div class="copy"><h3>Система вместо хаоса</h3><p>Важно не просто повторить схему, а понимать причину каждого решения и отвечать за качество своей работы.</p></div></article></div>
+<div class="students"><article class="student-card reveal"><img alt="Юлия Гусева с ученицей после обучения" decoding="async" loading="lazy" src="images/image-10.jpg"/><div class="copy"><h3>Практика и обратная связь</h3><p>Постановка руки, корректировки по ходу работы и самостоятельная отработка под контролем преподавателя.</p></div></article><article class="student-card reveal"><img alt="Ученицы Юлии Гусевой после обучения" decoding="async" loading="lazy" src="images/image-11.jpg"/><div class="copy"><h3>Система вместо хаоса</h3><p>Важно не просто повторить схему, а понимать причину каждого решения и отвечать за качество своей работы.</p></div></article></div>
 </section>
 <section class="section shell" id="about">
-<div class="about"><img class="reveal" src="images/image-12.webp" alt="Юлия Гусева"><div class="reveal"><div class="eyebrow">05 / ОБО МНЕ</div><h2>ЮЛИЯ <span>ГУСЕВА</span></h2><p>Мастер и преподаватель по наращиванию и ламинированию ресниц. Более 8 лет в beauty-сфере и 4 года преподавания.</p><p>Моя сильная сторона — диагностическое мышление: не маскировать ошибку, а понимать её причину. Поэтому и клиенту, и ученице я объясняю, почему выбираю конкретное решение и за счёт чего результат будет безопасным и предсказуемым.</p><div class="badges"><span class="badge">16-кратный призёр чемпионатов</span><span class="badge">тренер</span><span class="badge">сильная база</span><span class="badge">принцип «не навреди»</span></div><div class="quote">«Моя задача — не просто показать, что делать, а научить понимать, почему именно так».</div></div></div>
+<div class="about"><img alt="Юлия Гусева" class="reveal" src="images/image-12.jpg"/><div class="reveal"><div class="eyebrow">05 / ОБО МНЕ</div><h2>ЮЛИЯ <span>ГУСЕВА</span></h2><p>Мастер и преподаватель по наращиванию и ламинированию ресниц. 9 лет в beauty-сфере и 5 лет преподавания.</p><p>Моя сильная сторона — диагностическое мышление: не маскировать ошибку, а понимать её причину. Поэтому и клиенту, и ученице я объясняю, почему выбираю конкретное решение и за счёт чего результат будет безопасным и предсказуемым.</p><div class="badges"><span class="badge">16-кратный призёр чемпионатов</span><span class="badge">тренер</span><span class="badge">сильная база</span><span class="badge">принцип «не навреди»</span></div><div class="quote">«Моя задача — не просто показать, что делать, а научить понимать, почему именно так».</div></div></div>
 </section>
 <section class="section shell"><div class="section-head reveal"><div><div class="eyebrow">06 / КАК Я РАБОТАЮ</div><h2 class="section-title">ПРОСТО. ПОНЯТНО. ПРЕДСКАЗУЕМО.</h2></div></div><div class="steps"><div class="step reveal"><b>01</b><h4>Диагностика</h4><p>Смотрим исходник и определяем задачу.</p></div><div class="step reveal"><b>02</b><h4>Подбор</h4><p>Выбираем технику, изгиб и эффект.</p></div><div class="step reveal"><b>03</b><h4>Работа</h4><p>Действуем последовательно и безопасно.</p></div><div class="step reveal"><b>04</b><h4>Результат</h4><p>Получаем подходящий именно вам итог.</p></div></div></section>
-<section class="section shell"><div class="section-head reveal"><div><div class="eyebrow">07 / FAQ</div><h2 class="section-title">ОТВЕЧАЮ НА ГЛАВНЫЕ.</h2></div></div><div class="faq reveal"><details><summary>Как понять, что выбрать — ламинирование или наращивание?</summary><p>Если хочется подчеркнуть свои ресницы и сохранить натуральность — чаще подходит ламинирование. Если нужна дополнительная плотность, длина или выраженный эффект — наращивание. Точный выбор зависит от исходника.</p></details><details><summary>Можно ли прийти без понимания, какой эффект я хочу?</summary><p>Да. Вы не обязаны разбираться в валиках, изгибах и схемах. Я помогу определить реалистичный и безопасный результат.</p></details><details><summary>Можно ли прийти на обучение совсем с нуля?</summary><p>Да. Базовые программы рассчитаны в том числе на новичков.</p></details><details><summary>Есть ли поддержка после курса?</summary><p>Да. Обучение не заканчивается сертификатом: после курса можно разбирать вопросы, возникающие в первых самостоятельных работах.</p></details></div></section>
-<section class="section shell" id="contact"><div class="final reveal"><div class="eyebrow">08 / ЗАПИСЬ</div><h2>ГОТОВЫ СДЕЛАТЬ ПЕРВЫЙ ШАГ?</h2><p>Выберите, что вас интересует — процедура или обучение. Я расскажу подробности и помогу подобрать подходящий вариант.</p><div class="actions"><a class="btn btn-pink" href="https://www.instagram.com/guseva_lamilash/" target="_blank" rel="noopener">Записаться на процедуру</a><a class="btn btn-outline" href="https://www.instagram.com/guseva_lamilash/" target="_blank" rel="noopener">Узнать об обучении</a></div></div></section>
+<section class="section shell"><div class="section-head reveal"><div><div class="eyebrow">07 / FAQ</div><h2 class="section-title">ОТВЕЧАЮ НА ГЛАВНЫЕ.</h2></div></div><div class="faq reveal"><details><summary>Как понять, что выбрать — ламинирование или наращивание?</summary><p>Если хочется подчеркнуть свои ресницы и сохранить натуральность — чаще подходит ламинирование. Если нужна дополнительная плотность, длина или выраженный эффект — наращивание. Точный выбор зависит от исходника.</p></details><details><summary>Можно ли прийти без понимания, какой эффект я хочу?</summary><p>Да. Вы не обязаны разбираться в валиках, изгибах и схемах. Я помогу определить реалистичный и безопасный результат.</p></details><details><summary>Можно ли прийти на обучение совсем с нуля?</summary><p>Да. Базовые программы рассчитаны в том числе на новичков.</p></details><details><summary>Есть ли поддержка после курса?</summary><p>Да. Обучение не заканчивается сертификатом: после курса можно разбирать вопросы, возникающие в первых самостоятельных работах.</p></details><details><summary>Сколько длится обучение и сколько будет практики?</summary><p>Формат зависит от выбранной программы. На курсе по ламинированию — блок предобучения до старта, один практический день и 3 самостоятельные отработки. На базовом курсе по наращиванию — теория в онлайн-записи, практика на моделях и отработки от классики к объёмам.</p></details><details><summary>Как записаться на процедуру или обучение?</summary><p>Нажмите кнопку записи на сайте и напишите мне. Я уточню ваш запрос, расскажу о свободных датах и помогу подобрать процедуру или подходящий тариф обучения.</p></details><details><summary>Сколько будет моделей на обучении и кто их предоставляет?</summary><p>На обучении предусмотрена практика на моделях. Количество зависит от программы: на курсе по ламинированию — 3 самостоятельные отработки. Моделей для практики предоставляю я.</p></details></div></section>
+<section class="section shell" id="contact"><div class="final reveal"><div class="eyebrow">08 / ЗАПИСЬ</div><h2>ГОТОВЫ СДЕЛАТЬ ПЕРВЫЙ ШАГ?</h2><p>Выберите, что вас интересует — процедура или обучение. Я расскажу подробности и помогу подобрать подходящий вариант.</p><div class="actions"><a class="btn btn-pink" href="https://www.instagram.com/guseva_lamilash/" rel="noopener" target="_blank">Записаться на процедуру</a><a class="btn btn-outline" href="https://www.instagram.com/guseva_lamilash/" rel="noopener" target="_blank">Узнать об обучении</a></div>
+<p class="messenger-note">Или напишите мне напрямую</p>
+<p class="messenger-help">Отвечу на вопросы и помогу выбрать процедуру или формат обучения.</p>
+<div class="messenger-links">
+  <a class="btn btn-outline" href="https://max.ru/u/f9LHodD0cOKjk4-lqQ3xhQlAym3e39dujEaDWNVPS3CZ309UqZqw38DZmaY" target="_blank" rel="noopener">MAX</a>
+  <a class="btn btn-outline" href="https://wa.me/79054472044" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-outline" href="https://t.me/Guseva_trener" target="_blank" rel="noopener">Telegram</a>
+</div></div></section>
 </main>
-<footer class="shell footer"><span>© Guseva LamiLash • Юлия Гусева</span><span>Минеральные Воды • КМВ</span></footer>
+<footer class="shell footer">
+<span>© Guseva LamiLash • Юлия Гусева</span>
+<div class="footer-messengers">
+  <a href="https://max.ru/u/f9LHodD0cOKjk4-lqQ3xhQlAym3e39dujEaDWNVPS3CZ309UqZqw38DZmaY" target="_blank" rel="noopener">MAX</a>
+  <a href="https://wa.me/79054472044" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="https://t.me/Guseva_trener" target="_blank" rel="noopener">Telegram</a>
+</div>
+<span>Минеральные Воды • КМВ</span>
+</footer>
 <script>
 const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');menu.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
 </script></body></html>
